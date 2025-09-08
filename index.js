@@ -25,24 +25,29 @@ app.listen(port,()=>{
 
 //basic path 
 app.get("/", (req, res) => {
-    res.send("server working well");
+    res.render("home.ejs");
 });
 
 let posts = [
     {
         id       : uuidv4(),
-        username : "sam",
-        content  : "love to code",
+        username : "tech_wizard",
+        content  : "Just deployed a full-stack MERN application. The feeling of seeing it go live is unmatched! #javascript #react #nodejs",
     },
     {
         id       : uuidv4(),
-        username : "samarth",
-        content  : "love to create"
+        username : "bookworm_bibliophile",
+        content  : "Currently lost in the world of 'Dune'. The world-building is absolutely phenomenal. What'sੇ your favorite sci-fi novel?",
     },
     {
         id       : uuidv4(),
-        username : "golu",
-        content  : "love to play",
+        username : "gamer_guru",
+        content  : "Finally beat that last boss in Elden Ring after 50+ tries. My hands are shaking, but the victory is sweet! #gaming #eldenring",
+    },
+    {
+        id       : uuidv4(),
+        username : "foodie_adventures",
+        content  : "Tried making homemade pasta for the first time today. It was messy, but so worth it! 🍝 Nothing beats fresh pasta.",
     }
 ];
 
