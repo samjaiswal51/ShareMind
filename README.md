@@ -45,7 +45,7 @@
 
 <div align="center">
   <img src="assets/home.png" alt="Home Page" width="250" />
-  <img src="assets/post.png.png" alt="Post Section" width="250" />
+  <img src="assets/post.png" alt="Post Section" width="250" />
   <img src="assets/create.png" alt="Create Section" width="250" />
 </div>
 
