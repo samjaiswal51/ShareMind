@@ -44,9 +44,9 @@
 ## 📸 Screenshots
 
 <div align="center">
-  <img src="https://placehold.co/600x400/4D0000/ffffff?text=Homepage" alt="Home Page" width="250" />
-  <img src="https://placehold.co/600x400/800000/ffffff?text=Posts+Feed" alt="Projects Section" width="250" />
-  <img src="https://placehold.co/600x400/A32638/ffffff?text=Edit+Page" alt="Projects Section" width="250" />
+  <img src="assets/home.png" alt="Home Page" width="250" />
+  <img src="assets/post.png.png" alt="Post Section" width="250" />
+  <img src="assets/create.png" alt="Create Section" width="250" />
 </div>
 
 ---
