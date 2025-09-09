@@ -56,11 +56,11 @@ Follow these steps to run the project locally on your machine:
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone [your-repository-url]
+git clone https://github.com/samjaiswal51/ShareMind.git
 ```
 ### 2️⃣ Navigate to the Project Folder
 ```bash
-cd [project-folder-name]
+cd ShareMind
 ```
 ### 3️⃣ Install Dependencies
 ```bash
