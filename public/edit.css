@@ -1,0 +1,136 @@
+/* ---- Google Font Import ---- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* ---- Color Palette ---- */
+:root {
+    --maroon-darkest: #4D0000;
+    --maroon-dark: #800000;
+    --maroon-base: #A32638;
+    --maroon-light: #C34A5A;
+    --off-white: #f8f9fa;
+    --grey-light: #e9ecef;
+    --text-dark: #343a40;
+    --text-light: #6c757d;
+}
+
+/* ---- Base Styles & Animated Gradient Background ---- */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    margin: 0;
+    background: linear-gradient(135deg, var(--maroon-dark), var(--maroon-light), var(--maroon-darkest));
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ---- Edit Form Card ---- */
+.edit-card {
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: fadeInScaleUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes fadeInScaleUp {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ---- Card Header ---- */
+.card-header-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--maroon-darkest);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.card-user {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* ---- Form Styling ---- */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid var(--grey-light);
+    font-size: 1rem;
+    line-height: 1.6;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--maroon-base);
+    box-shadow: 0 0 0 4px rgba(163, 38, 56, 0.1);
+    outline: none;
+}
+
+/* ---- Action Buttons ---- */
+.card-actions {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-image: linear-gradient(45deg, var(--maroon-base) 0%, var(--maroon-dark) 100%);
+    color: white;
+}
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(128, 0, 0, 0.3);
+}
+
+.btn-secondary {
+    background-color: var(--grey-light);
+    color: var(--text-dark);
+}
+.btn-secondary:hover {
+    background-color: #d3d9df;
+    transform: translateY(-3px);
+}
